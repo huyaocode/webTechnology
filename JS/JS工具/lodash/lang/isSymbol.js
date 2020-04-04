@@ -1,4 +1,4 @@
-import getTag from './.internal/getTag.js'
+import getTag from '../.internal/getTag.js'
 
 function isSymbol(value) {
   const type = typeof value;

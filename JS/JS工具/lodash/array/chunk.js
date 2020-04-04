@@ -1,5 +1,5 @@
 import slice from './slice'
-import toInteger from './toInteger'
+import toInteger from '../lang/toInteger'
 
 /**
  * 将数组（array）拆分成多个 size 长度的区块，并将这些区块组成一个新数组。

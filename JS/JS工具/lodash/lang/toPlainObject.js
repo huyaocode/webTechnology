@@ -23,3 +23,5 @@ function toPlainObject(value) {
   }
   return value;
 }
+
+export default toPlainObject;
