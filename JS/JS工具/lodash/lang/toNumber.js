@@ -1,5 +1,5 @@
-import isObject from 'isObject'
-import isSymbol from 'isSymbol'
+import isObject from './isObject'
+import isSymbol from './isSymbol'
 
 /**
  * 转换 value 为一个有限数字。
@@ -51,4 +51,4 @@ function toNumber(value) {
     : (reIsBadHex.test(value) ? NAN : +value)
 }
 
-export default toNumbe
+export default toNumber
