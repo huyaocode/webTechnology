@@ -14,6 +14,4 @@ function arrayIncludes(array, value) {
   return !!length && baseIndexOf(array, value, 0) > -1
 }
 
-// export default arrayIncludes
-
-console.log(arrayIncludes([1,2], 2))
+export default arrayIncludes
