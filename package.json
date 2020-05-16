@@ -1,5 +1,40 @@
 {
+  "name": "webTechnology",
+  "version": "1.0.0",
+  "description": "web 工程中的问题解决方法、进阶的知识，是偏向实用的、非基础的，内容的来源是从网上收藏一些文章并分类整理。",
+  "main": "index.js",
+  "dependencies": {
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.2"
+  },
   "devDependencies": {
-    "babel-preset-es2015": "^6.24.1"
+    "babel-preset-es2015": "^6.24.1",
+    "lint-staged": "^10.2.2",
+    "prettier": "2.0.5"
+  },
+  "scripts": {
+    "pretter": "prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huyaocode/webTechnology.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/huyaocode/webTechnology/issues"
+  },
+  "homepage": "https://github.com/huyaocode/webTechnology#readme",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.*": [
+      "prettier --write",
+      "git add"
+    ]
   }
 }

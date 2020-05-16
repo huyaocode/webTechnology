@@ -22,7 +22,7 @@
 
   --base-line-height: 1.428571429;
   --transition-duration: 0.35s;
-  --external-link: 'external link';
+  --external-link: "external link";
   --margin-top: calc(2vh + 20px);
 }
 ```
@@ -51,8 +51,8 @@ color: var(--foo, #7f583f);
 
 ```css
  {
-  --bar: 'hello';
-  --foo: var(--bar) ' world';
+  --bar: "hello";
+  --foo: var(--bar) " world";
 }
 
 .foo {
@@ -73,15 +73,17 @@ color: var(--foo, #7f583f);
 - 全局的变量通常放在根元素`:root`里面
 
 ### 兼容性
- - [caniuse](https://www.caniuse.com/#search=css%20var)
 
-可以使用@support命令进行检测。
+- [caniuse](https://www.caniuse.com/#search=css%20var)
+
+可以使用@support 命令进行检测。
+
 ```css
-@supports ( (--a: 0)) {
+@supports ((--a: 0)) {
   /* supported */
 }
 
-@supports ( not (--a: 0)) {
+@supports (not (--a: 0)) {
   /* not supported */
 }
 ```
@@ -89,8 +91,10 @@ color: var(--foo, #7f583f);
 ### JavaScript 操作
 
 检测浏览器是否支持 CSS 变量。
+
 ```js
-const isSupported = window.CSS && window.CSS.supports && window.CSS.supports('--a', 0);
+const isSupported =
+  window.CSS && window.CSS.supports && window.CSS.supports("--a", 0);
 
 if (isSupported) {
   /* supported */
@@ -100,16 +104,17 @@ if (isSupported) {
 ```
 
 JavaScript 操作 CSS 变量的写法如下。
+
 ```js
 // 设置变量
-document.body.style.setProperty('--primary', '#7F583F');
+document.body.style.setProperty("--primary", "#7F583F");
 
 // 读取变量
-document.body.style.getPropertyValue('--primary').trim();
+document.body.style.getPropertyValue("--primary").trim();
 // -> '#7F583F'
 
 // 删除变量
-document.body.style.removeProperty('--primary');
+document.body.style.removeProperty("--primary");
 ```
 
 ## 应用
@@ -117,10 +122,10 @@ document.body.style.removeProperty('--primary');
 ### 例子：变换主题颜色
 
 ```js
-['red', 'blue', 'green'].forEach((v) => {
+["red", "blue", "green"].forEach((v) => {
   const btn = document.getElementById(`${v}-theme-btn`);
-  btn.addEventListener('click', () =>
-    document.body.style.setProperty('--bg-color', v)
+  btn.addEventListener("click", () =>
+    document.body.style.setProperty("--bg-color", v)
   );
 });
 ```
