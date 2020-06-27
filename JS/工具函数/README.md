@@ -1,25 +1,25 @@
 JavaScript 工具函数
 
-此篇文档目的为：**学习 30s-js 的写法，记住 lodash 有哪些方法**。
+此篇文档目的为：**学习 30s-js 的写法**。
 
 参考链接：https://www.30secondsofcode.org/js/p/1/
 
 [JavaScript 数组函数整理](https://github.com/huyaocode/webKnowledge/blob/master/JS基础/全局内置对象.md#数组Array对象常用方法)
 
-- [数组](#%e6%95%b0%e7%bb%84)
+- [数组](#数组)
   - [accumulate](#accumulate)
   - [arrayMax](#arraymax)
   - [arrayMin](#arraymin)
   - [aperture](#aperture)
-  - [arrayToCSV - 数组转 CSV](#arraytocsv---%e6%95%b0%e7%bb%84%e8%bd%ac-csv)
+  - [arrayToCSV - 数组转 CSV](#arraytocsv---数组转-csv)
   - [ary](#ary)
-  - [atob - base-64 转正常的 string](#atob---base-64-%e8%bd%ac%e6%ad%a3%e5%b8%b8%e7%9a%84-string)
+  - [atob - base-64 转正常的 string](#atob---base-64-转正常的-string)
   - [attempt](#attempt)
-  - [average - 求平均数](#average---%e6%b1%82%e5%b9%b3%e5%9d%87%e6%95%b0)
-  - [averageBy - 函数结果的平均数](#averageby---%e5%87%bd%e6%95%b0%e7%bb%93%e6%9e%9c%e7%9a%84%e5%b9%b3%e5%9d%87%e6%95%b0)
-  - [bifurcateBy - 通过函数将数组分为两部分](#bifurcateby---%e9%80%9a%e8%bf%87%e5%87%bd%e6%95%b0%e5%b0%86%e6%95%b0%e7%bb%84%e5%88%86%e4%b8%ba%e4%b8%a4%e9%83%a8%e5%88%86)
-  - [\_.chunk - 切分数组](#chunk---%e5%88%87%e5%88%86%e6%95%b0%e7%bb%84)
-  - [\_.compact](#compact)
+  - [average - 求平均数](#average---求平均数)
+  - [averageBy - 函数结果的平均数](#averageby---函数结果的平均数)
+  - [bifurcateBy - 通过函数将数组分为两部分](#bifurcateby---通过函数将数组分为两部分)
+  - [\_.chunk - 切分数组](#_chunk---切分数组)
+  - [\_.compact](#_compact)
   - [countOccurrences](#countoccurrences)
   - [deepFlatten](#deepflatten)
   - [difference](#difference)
